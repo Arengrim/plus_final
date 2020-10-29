@@ -1,0 +1,161 @@
+.app-container {
+  max-width: 800px;
+  max-height: 500px;
+  margin: 30px auto;
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(255, 255, 255);
+  position: relative;
+  align-content: center;
+}
+
+.bar,
+.button {
+  width: 50%;
+  border: none;
+  font-size: 16px;
+  padding: 10px 15px 10px 40px;
+  transition: all 0.2s ease 0s;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  mix-blend-mode: overlay;
+  position: relative;
+
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.button {
+  width: 10%;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
+}
+h1 {
+  text-align: left;
+  position: relative;
+  top: 80px;
+  left: 50px;
+}
+p {
+  text-align: left;
+  position: relative;
+  top: 80px;
+  left: 50px;
+}
+
+.current-weather {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 100px;
+  position: relative;
+  left: 150px;
+  top: 100px;
+  text-decoration: none;
+}
+.current-weather a {
+  color: rgba(255, 255, 255, 0.8);
+}
+.container {
+  display: flex 1 1 100px;
+  padding: 10px 0px;
+  margin: 20px 0px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.now {
+  width: 380px;
+  position: relative;
+  left: 650px;
+  bottom: 150px;
+}
+.now p {
+  position: relative;
+  top: 15px;
+  bottom: 10px;
+  left: 10px;
+  text-align: center;
+  display: inline-block;
+}
+.sun {
+  width: 380px;
+  position: relative;
+  left: 650px;
+  bottom: 150px;
+  text-align: center;
+}
+.sun p {
+  display: block;
+  position: relative;
+  top: 10px;
+  bottom: 10px;
+}
+.surise {
+  font-size: 25px;
+  color: rgb(249, 209, 129);
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.sunset {
+  font-size: 25px;
+  color: rgba(115, 119, 124);
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.forecast {
+  position: relative;
+  left: 50px;
+  bottom: 100px;
+  right: 50px;
+  text-align: center;
+}
+.forecast h2 {
+  text-align: left;
+  position: relative;
+  left: 5px;
+  bottom: 20px;
+}
+.forecast p {
+  position: relative;
+  top: 15px;
+  bottom: 10px;
+  left: 50px;
+}
+.light {
+  font-size: 20px;
+  color: rgb(249, 209, 129);
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.cloud {
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+.rain {
+  font-size: 20px;
+  color: rgba(115, 119, 124);
+  text-align: center;
+  position: relative;
+  top: 10px;
+}
+footer {
+  font-family: monospace;
+  color: rgba(255, 255, 255, 0.4);
+  position: relative;
+  top: 80px;
+  left: 500px;
+  text-align: left;
+}
+a {
+  font-family: monospace;
+  top: 80px;
+  left: 500px;
+  text-align: left;
+  color: rgba(255, 255, 255, 0.4);
+}
