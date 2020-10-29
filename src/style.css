@@ -9,28 +9,34 @@
   font-family: "Fjalla One", sans-serif;
   color: rgb(255, 255, 255);
   position: relative;
-  align-content: center;
 }
 
-.bar,
-.button {
+.bar {
   width: 50%;
   border: none;
   font-size: 16px;
   padding: 10px 15px 10px 40px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
+    rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+  mix-blend-mode: overlay;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.button {
+  width: 100px;
+  text-align: center;
+  padding: 10px 15px 10px 15px;
   transition: all 0.2s ease 0s;
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   mix-blend-mode: overlay;
   position: relative;
-
+  font-size: 16px;
   background-color: rgba(255, 255, 255, 0.5);
-}
-.button {
-  width: 10%;
-  text-align: center;
-  padding: 10px 15px 10px 15px;
+  align-content: center;
+  border: none;
 }
 h1 {
   text-align: left;
