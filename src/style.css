@@ -137,6 +137,10 @@ p {
   position: relative;
   top: 10px;
 }
+.units {
+  text-align: left;
+  font-size: 30px;
+}
 footer {
   font-family: monospace;
   color: #000000;
