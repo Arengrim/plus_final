@@ -55,6 +55,13 @@ p {
   left: 50px;
   font-size: 15px;
 }
+.timeshow {
+  text-align: left;
+  position: relative;
+  top: 40px;
+  left: 50px;
+  font-size: 15px;
+}
 
 .current-weather {
   color: rgba(255, 255, 255, 0.8);
