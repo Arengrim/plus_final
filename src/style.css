@@ -2,15 +2,18 @@
   max-width: 800px;
   max-height: 500px;
   margin: 30px auto;
-  padding: 20px;
+  padding: 10px;
   border: 1px solid #ffffff;
   border-radius: 20px;
   background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
   font-family: "Fjalla One", sans-serif;
   color: rgb(255, 255, 255);
-  position: relative;
 }
-
+.search-bar {
+  position: relative;
+  left: 80px;
+  top: 15px;
+}
 .bar {
   width: 50%;
   border: none;
@@ -20,7 +23,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   mix-blend-mode: overlay;
-  position: relative;
+
   background-color: rgba(255, 255, 255, 0.5);
 }
 .button {
@@ -32,7 +35,7 @@
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px,
     rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
   mix-blend-mode: overlay;
-  position: relative;
+
   font-size: 16px;
   background-color: rgba(255, 255, 255, 0.5);
   align-content: center;
@@ -66,29 +69,33 @@ p {
   font-size: 15px;
 }
 .forecast-container {
-  padding: 10px 0px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-  width: 700px;
-  height: 100px;
-  bottom: 20px;
-  right: 50px;
+  width: 680px;
+  height: 140px;
+  top: 25px;
+  right: 5px;
+  bottom: 15px;
   position: relative;
 }
 .now-container {
-  width: 350px;
-  height: 200px;
+  width: 400px;
+  height: 120px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   position: relative;
-  left: 350px;
-  right: 50px;
-  bottom: 140px;
+  left: 323px;
+  right: 80px;
+  bottom: 90px;
   align-content: center;
 }
-.now-container p {
-  text-align: center;
+.now-container strong {
+  position: relative;
+  top: 35px;
+  bottom: 10px;
+  left: 10px;
 }
+
 .forecast {
   position: relative;
   left: 50px;
@@ -100,13 +107,14 @@ p {
   text-align: left;
   position: relative;
   left: 5px;
-  bottom: 20px;
+  top: 30px;
+
+  font-size: 25px;
 }
-.forecast p {
+.forecast strong {
   position: relative;
-  top: 15px;
+  top: 20px;
   bottom: 10px;
-  left: 50px;
 }
 .light {
   font-size: 20px;
@@ -131,16 +139,8 @@ p {
 }
 footer {
   font-family: monospace;
-  color: rgba(255, 255, 255, 0.4);
+  color: #000000;
+  font-size: 12px;
   position: relative;
-  top: 80px;
-  left: 500px;
-  text-align: left;
-}
-a {
-  font-family: monospace;
-  top: 80px;
-  left: 500px;
-  text-align: left;
-  color: rgba(255, 255, 255, 0.4);
+  left: 260px;
 }
