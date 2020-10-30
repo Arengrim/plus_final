@@ -41,74 +41,53 @@
 h1 {
   text-align: left;
   position: relative;
-  top: 80px;
+  top: 40px;
   left: 50px;
+  font-size: 30px;
 }
 p {
   text-align: left;
   position: relative;
-  top: 80px;
+  top: 40px;
   left: 50px;
+  font-size: 15px;
 }
 
 .current-weather {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 100px;
+  font-size: 60px;
   position: relative;
-  left: 150px;
-  top: 100px;
+  left: 80px;
+  top: 40px;
   text-decoration: none;
 }
 .current-weather a {
   color: rgba(255, 255, 255, 0.8);
+  font-size: 15px;
 }
-.container {
-  display: flex 1 1 100px;
+.forecast-container {
   padding: 10px 0px;
-  margin: 20px 0px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
-}
-.now {
-  width: 380px;
+  width: 700px;
+  height: 100px;
+  bottom: 20px;
+  right: 50px;
   position: relative;
-  left: 650px;
-  bottom: 150px;
 }
-.now p {
+.now-container {
+  width: 350px;
+  height: 200px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
   position: relative;
-  top: 15px;
-  bottom: 10px;
-  left: 10px;
+  left: 350px;
+  right: 50px;
+  bottom: 140px;
+  align-content: center;
+}
+.now-container p {
   text-align: center;
-  display: inline-block;
-}
-.sun {
-  width: 380px;
-  position: relative;
-  left: 650px;
-  bottom: 150px;
-  text-align: center;
-}
-.sun p {
-  display: block;
-  position: relative;
-  top: 10px;
-  bottom: 10px;
-}
-.surise {
-  font-size: 25px;
-  color: rgb(249, 209, 129);
-  text-align: center;
-  position: relative;
-  top: 10px;
-}
-.sunset {
-  font-size: 25px;
-  color: rgba(115, 119, 124);
-  text-align: center;
-  position: relative;
-  top: 10px;
 }
 .forecast {
   position: relative;
