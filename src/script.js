@@ -46,9 +46,9 @@ iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  console.log( response.data.main);
+  
   let maxTempElement=document.querySelector("#maxTemp")
-  maxTempElement.innerHTML=response.data.main.temp_max;
+  maxTempElement.innerHTML=Math.round(response.data.main.temp_max);
   let minTempElement=document.querySelector("#minTemp")
   minTempElement.innerHTML=Math.round(response.data.main.temp_min);
 }
