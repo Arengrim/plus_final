@@ -11,7 +11,7 @@
 }
 .search-bar {
   position: relative;
-  left: 80px;
+  left: 140px;
   top: 15px;
 }
 .bar {
@@ -45,21 +45,15 @@ h1 {
   text-align: left;
   position: relative;
   top: 40px;
-  left: 50px;
+  left: 70px;
   font-size: 30px;
 }
-p {
-  text-align: left;
-  position: relative;
-  top: 40px;
-  left: 50px;
-  font-size: 15px;
-}
+
 .timeshow {
   text-align: left;
   position: relative;
   top: 40px;
-  left: 50px;
+  left: 70px;
   font-size: 15px;
 }
 
@@ -80,20 +74,29 @@ p {
   border-radius: 10px;
   width: 680px;
   height: 140px;
-  top: 25px;
-  right: 5px;
-  bottom: 15px;
   position: relative;
+  top: 15px;
 }
+.forecast-container strong {
+  position: relative;
+  top: 20px;
+}
+.forecast-container img {
+  position: relative;
+  top: 20px;
+  height: 50px;
+  width: 50px;
+}
+
 .now-container {
   width: 400px;
   height: 120px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 10px;
   position: relative;
-  left: 323px;
-  right: 80px;
-  bottom: 90px;
+  left: 330px;
+
+  bottom: 120px;
   align-content: center;
 }
 .now-container strong {
@@ -105,53 +108,29 @@ p {
 
 .forecast {
   position: relative;
-  left: 50px;
-  bottom: 100px;
-  right: 50px;
+  left: 65px;
+  bottom: 110px;
   text-align: center;
 }
 .forecast h2 {
   text-align: left;
+  left: 30px;
+  top: 20px;
   position: relative;
-  left: 5px;
-  top: 30px;
-
   font-size: 25px;
 }
-.forecast strong {
-  position: relative;
-  top: 20px;
-  bottom: 10px;
-}
-.light {
-  font-size: 20px;
-  color: rgb(249, 209, 129);
-  text-align: center;
-  position: relative;
-  top: 10px;
-}
-.cloud {
-  font-size: 20px;
-  color: #ffffff;
-  text-align: center;
-  position: relative;
-  top: 10px;
-}
-.rain {
-  font-size: 20px;
-  color: rgba(115, 119, 124);
-  text-align: center;
-  position: relative;
-  top: 10px;
-}
+
 .units {
-  text-align: left;
+  position: relative;
   font-size: 30px;
+  left: 130px;
+  bottom: 20px;
 }
+
 footer {
   font-family: monospace;
   color: #000000;
   font-size: 12px;
   position: relative;
-  left: 260px;
+  left: 520px;
 }
