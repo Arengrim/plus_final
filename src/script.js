@@ -46,6 +46,11 @@ iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
+  console.log( response.data.main);
+  let maxTempElement=document.querySelector("#maxTemp")
+  maxTempElement.innerHTML=response.data.main.temp_max;
+  let minTempElement=document.querySelector("#minTemp")
+  minTempElement.innerHTML=Math.round(response.data.main.temp_min);
 }
 function search(city) {
   let apiKey = "5f472b7acba333cd8a035ea85a0d4d4c";
@@ -53,9 +58,11 @@ function search(city) {
 
   axios.get(apiUrl).then(showTemperature);
   apiUrl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(dispalyForecast);
+  axios.get(apiUrl).then(showForecast);
+
 
 }
+
   
   function handleSubmit(event) {
   event.preventDefault();
@@ -69,7 +76,7 @@ let form = document.querySelector("#citySearch");
 form.addEventListener("submit", handleSubmit);
 search("Lisbon");
 
-function displayFahrenheitTemperature(event) {
+function showFahrenheitTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#tempToday");
   celsiusLink.classList.remove("active");
@@ -78,7 +85,7 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheiTemperature);
 }
 
-function displayCelsiusTemperature(event) {
+function showCelsiusTemperature(event) {
   event.preventDefault();
   celsiusLink.classList.add("active");
   fahrenheitLink.classList.remove("active");
@@ -87,13 +94,13 @@ function displayCelsiusTemperature(event) {
 }
 let celsiusTemperature = null
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
-fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+fahrenheitLink.addEventListener("click", showFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
-celsiusLink.addEventListener("click", displayCelsiusTemperature);
+celsiusLink.addEventListener("click", showCelsiusTemperature);
 
 
-function dispalyForecast(response) {
+function showForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   forecastElement.innerHTML= null;
   let forecast= null;
