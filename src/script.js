@@ -101,14 +101,13 @@ function dispalyForecast(response) {
 for (let index = 0; index < 6; index++) {
     forecast = response.data.list[index];
     forecastElement.innerHTML +=  `
-   
                     <div class="col-2">
                         <strong> ${formatHours(forecast.dt * 1000)} </strong>
                         </br>
-                            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"  width="40"
-              height="40"alt="" id="iconShow" class="day-icon">
+                            <img src="http://openweathermap.org/img/wn/${forecast.weather[0].icon}@2x.png"  width="60"
+              height="60"alt="" id="iconShow" class="day-icon">
                         </br>
-                        <strong>${Math.round(forecast.main.temp_max)}ºC
+                        <strong >${Math.round(forecast.main.temp_max)}ºC
                         </strong>
                     </div> 
                 </div>
